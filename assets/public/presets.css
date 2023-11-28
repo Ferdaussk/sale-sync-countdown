@@ -3287,6 +3287,7 @@
 
 #sscdn-progress-container {
   background: gray;
+  width: 200px;
   }
 
   #sscdn-progress-bar {
