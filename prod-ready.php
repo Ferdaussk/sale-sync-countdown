@@ -325,8 +325,8 @@ class ClassProdSSCDN {
                                             echo '<div id="sscdn-progress-container">';
                                                 $progressValue = $product->get_stock_quantity();
                                                 $outOfValue = $progressValue+$product->get_total_sales();
-                                                $initialProgress = round(($progressValue / $outOfValue) * 100);
-                                                echo '<div id="sscdn-progress-bar" progress="' . $initialProgress . '" outof="' . $outOfValue . '" style="width: ' . $progressValue . '%;"></div>';
+                                                $initialProgress = round(($progressValue / $outOfValue) * 100); $progressSale_totaL = 100-$initialProgress;
+                                                echo '<div id="sscdn-progress-bar" progress="' . $product->get_total_sales() . '" outof="' . $outOfValue . '" style="width: ' . $progressSale_totaL . '%;"></div>';
                                                 echo '</div>';
                                                 echo '<div class="sscdn_sold_stock"><span class="sscdn-sold-item">' . $product->get_total_sales() . '</span>' . $sscdn_separator . $product->get_stock_quantity() . esc_html__(' Items sold', 'sale-sync-countdown') . '</div>';
                                         }else{
@@ -339,8 +339,8 @@ class ClassProdSSCDN {
                                             echo '<div id="sscdn-progress-container">';
                                                 $progressValue = $product->get_stock_quantity();
                                                 $outOfValue = $progressValue+$product->get_total_sales();
-                                                $initialProgress = round(($progressValue / $outOfValue) * 100);
-                                                echo '<div id="sscdn-progress-bar" progress="' . $initialProgress . '" outof="' . $outOfValue . '" style="width: ' . $progressValue . '%;"></div>';
+                                                $initialProgress = round(($progressValue / $outOfValue) * 100); $progressSale_totaL = 100-$initialProgress;
+                                                echo '<div id="sscdn-progress-bar" progress="' . $product->get_total_sales() . '" outof="' . $outOfValue . '" style="width: ' . $progressSale_totaL . '%;"></div>';
                                             echo '</div>';
                                             echo '<div class="sscdn_sold_stock"><span class="sscdn-sold-item">' . $product->get_total_sales() . '</span>' . $sscdn_separator . $product->get_stock_quantity() . esc_html__(' Items sold', 'sale-sync-countdown') . '</div>';
                                         }else{
@@ -418,8 +418,8 @@ class ClassProdSSCDN {
                                         echo '<div id="sscdn-progress-container">';
                                             $progressValue = $product->get_stock_quantity();
                                             $outOfValue = $progressValue+$product->get_total_sales();
-                                            $initialProgress = round(($progressValue / $outOfValue) * 100);
-                                            echo '<div id="sscdn-progress-bar" progress="' . $initialProgress . '" outof="' . $outOfValue . '" style="width: ' . $progressValue . '%;"></div>';
+                                            $initialProgress = round(($progressValue / $outOfValue) * 100); $progressSale_totaL = 100-$initialProgress;
+                                            echo '<div id="sscdn-progress-bar" progress="' . $product->get_total_sales() . '" outof="' . $outOfValue . '" style="width: ' . $progressSale_totaL . '%;"></div>';
                                         echo '</div>';
                                         echo '<div class="sscdn_sold_stock"><span class="sscdn-sold-item">' . $product->get_total_sales() . '</span>' . $sscdn_separator . $product->get_stock_quantity() . esc_html__(' Items sold', 'sale-sync-countdown') . '</div>';
                                     }else{
@@ -432,8 +432,8 @@ class ClassProdSSCDN {
                                         echo '<div id="sscdn-progress-container">';
                                             $progressValue = $product->get_stock_quantity();
                                             $outOfValue = $progressValue+$product->get_total_sales();
-                                            $initialProgress = round(($progressValue / $outOfValue) * 100);
-                                            echo '<div id="sscdn-progress-bar" progress="' . $initialProgress . '" outof="' . $outOfValue . '" style="width: ' . $progressValue . '%;"></div>';
+                                            $initialProgress = round(($progressValue / $outOfValue) * 100); $progressSale_totaL = 100-$initialProgress;
+                                            echo '<div id="sscdn-progress-bar" progress="' . $product->get_total_sales() . '" outof="' . $outOfValue . '" style="width: ' . $progressSale_totaL . '%;"></div>';
                                         echo '</div>';
                                         echo '<div class="sscdn_sold_stock"><span class="sscdn-sold-item">' . $product->get_total_sales() . '</span>' . $sscdn_separator . $product->get_stock_quantity() . esc_html__(' Items sold', 'sale-sync-countdown') . '</div>';
                                     }else{
@@ -482,8 +482,8 @@ class ClassProdSSCDN {
                                                     echo '<div id="sscdn-progress-container">';
                                                         $progressValue = $product->get_stock_quantity();
                                                         $outOfValue = $progressValue+$product->get_total_sales();
-                                                        $initialProgress = round(($progressValue / $outOfValue) * 100);
-                                                        echo '<div id="sscdn-progress-bar" progress="' . $initialProgress . '" outof="' . $outOfValue . '" style="width: ' . $progressValue . '%;"></div>';
+                                                        $initialProgress = round(($progressValue / $outOfValue) * 100); $progressSale_totaL = 100-$initialProgress;
+                                                        echo '<div id="sscdn-progress-bar" progress="' . $product->get_total_sales() . '" outof="' . $outOfValue . '" style="width: ' . $progressSale_totaL . '%;"></div>';
                                                     echo '</div>';
                                                     echo '<div class="sscdn_sold_stock"><span class="sscdn-sold-item">' . $product->get_total_sales() . '</span>' . $sscdn_separator . $product->get_stock_quantity() . esc_html__(' Items sold', 'sale-sync-countdown') . '</div>';
                                                 }else{
@@ -496,8 +496,8 @@ class ClassProdSSCDN {
                                                     echo '<div id="sscdn-progress-container">';
                                                         $progressValue = $product->get_stock_quantity();
                                                         $outOfValue = $progressValue+$product->get_total_sales();
-                                                        $initialProgress = round(($progressValue / $outOfValue) * 100);
-                                                        echo '<div id="sscdn-progress-bar" progress="' . $initialProgress . '" outof="' . $outOfValue . '" style="width: ' . $progressValue . '%;"></div>';
+                                                        $initialProgress = round(($progressValue / $outOfValue) * 100); $progressSale_totaL = 100-$initialProgress;
+                                                        echo '<div id="sscdn-progress-bar" progress="' . $product->get_total_sales() . '" outof="' . $outOfValue . '" style="width: ' . $progressSale_totaL . '%;"></div>';
                                                     echo '</div>';
                                                     echo '<div class="sscdn_sold_stock"><span class="sscdn-sold-item">' . $product->get_total_sales() . '</span>' . $sscdn_separator . $product->get_stock_quantity() . esc_html__(' Items sold', 'sale-sync-countdown') . '</div>';
                                                 }else{
@@ -567,8 +567,8 @@ class ClassProdSSCDN {
                                                     echo '<div id="sscdn-progress-container">';
                                                         $progressValue = $product->get_stock_quantity();
                                                         $outOfValue = $progressValue+$product->get_total_sales();
-                                                        $initialProgress = round(($progressValue / $outOfValue) * 100);
-                                                        echo '<div id="sscdn-progress-bar" progress="' . $initialProgress . '" outof="' . $outOfValue . '" style="width: ' . $progressValue . '%;"></div>';
+                                                        $initialProgress = round(($progressValue / $outOfValue) * 100); $progressSale_totaL = 100-$initialProgress;
+                                                        echo '<div id="sscdn-progress-bar" progress="' . $product->get_total_sales() . '" outof="' . $outOfValue . '" style="width: ' . $progressSale_totaL . '%;"></div>';
                                                     echo '</div>';
                                                     echo '<div class="sscdn_sold_stock"><span class="sscdn-sold-item">' . $product->get_total_sales() . '</span>' . $sscdn_separator . $product->get_stock_quantity() . esc_html__(' Items sold', 'sale-sync-countdown') . '</div>';
                                                 }else{
@@ -581,8 +581,8 @@ class ClassProdSSCDN {
                                                     echo '<div id="sscdn-progress-container">';
                                                         $progressValue = $product->get_stock_quantity();
                                                         $outOfValue = $progressValue+$product->get_total_sales();
-                                                        $initialProgress = round(($progressValue / $outOfValue) * 100);
-                                                        echo '<div id="sscdn-progress-bar" progress="' . $initialProgress . '" outof="' . $outOfValue . '" style="width: ' . $progressValue . '%;"></div>';
+                                                        $initialProgress = round(($progressValue / $outOfValue) * 100); $progressSale_totaL = 100-$initialProgress;
+                                                        echo '<div id="sscdn-progress-bar" progress="' . $product->get_total_sales() . '" outof="' . $outOfValue . '" style="width: ' . $progressSale_totaL . '%;"></div>';
                                                     echo '</div>';
                                                     echo '<div class="sscdn_sold_stock"><span class="sscdn-sold-item">' . $product->get_total_sales() . '</span>' . $sscdn_separator . $product->get_stock_quantity() . esc_html__(' Items sold', 'sale-sync-countdown') . '</div>';
                                                 }else{
@@ -665,8 +665,8 @@ class ClassProdSSCDN {
                                             echo '<div id="sscdn-progress-container">';
                                                 $progressValue = $product->get_stock_quantity();
                                                 $outOfValue = $progressValue+$product->get_total_sales();
-                                                $initialProgress = round(($progressValue / $outOfValue) * 100);
-                                                echo '<div id="sscdn-progress-bar" progress="' . $initialProgress . '" outof="' . $outOfValue . '" style="width: ' . $progressValue . '%;"></div>';
+                                                $initialProgress = round(($progressValue / $outOfValue) * 100); $progressSale_totaL = 100-$initialProgress;
+                                                echo '<div id="sscdn-progress-bar" progress="' . $product->get_total_sales() . '" outof="' . $outOfValue . '" style="width: ' . $progressSale_totaL . '%;"></div>';
                                             echo '</div>';
                                             echo '<div class="sscdn_sold_stock"><span class="sscdn-sold-item">' . $product->get_total_sales() . '</span>' . $sscdn_separator . $product->get_stock_quantity() . esc_html__(' Items sold', 'sale-sync-countdown') . '</div>';
                                         }else{
@@ -679,8 +679,8 @@ class ClassProdSSCDN {
                                             echo '<div id="sscdn-progress-container">';
                                                 $progressValue = $product->get_stock_quantity();
                                                 $outOfValue = $progressValue+$product->get_total_sales();
-                                                $initialProgress = round(($progressValue / $outOfValue) * 100);
-                                                echo '<div id="sscdn-progress-bar" progress="' . $initialProgress . '" outof="' . $outOfValue . '" style="width: ' . $progressValue . '%;"></div>';
+                                                $initialProgress = round(($progressValue / $outOfValue) * 100); $progressSale_totaL = 100-$initialProgress;
+                                                echo '<div id="sscdn-progress-bar" progress="' . $product->get_total_sales() . '" outof="' . $outOfValue . '" style="width: ' . $progressSale_totaL . '%;"></div>';
                                             echo '</div>';
                                             echo '<div class="sscdn_sold_stock"><span class="sscdn-sold-item">' . $product->get_total_sales() . '</span>' . $sscdn_separator . $product->get_stock_quantity() . esc_html__(' Items sold', 'sale-sync-countdown') . '</div>';
                                         }else{
@@ -753,8 +753,8 @@ class ClassProdSSCDN {
                                             echo '<div id="sscdn-progress-container">';
                                                 $progressValue = $product->get_stock_quantity();
                                                 $outOfValue = $progressValue+$product->get_total_sales();
-                                                $initialProgress = round(($progressValue / $outOfValue) * 100);
-                                                echo '<div id="sscdn-progress-bar" progress="' . $initialProgress . '" outof="' . $outOfValue . '" style="width: ' . $progressValue . '%;"></div>';
+                                                $initialProgress = round(($progressValue / $outOfValue) * 100); $progressSale_totaL = 100-$initialProgress;
+                                                echo '<div id="sscdn-progress-bar" progress="' . $product->get_total_sales() . '" outof="' . $outOfValue . '" style="width: ' . $progressSale_totaL . '%;"></div>';
                                             echo '</div>';
                                             echo '<div class="sscdn_sold_stock"><span class="sscdn-sold-item">' . $product->get_total_sales() . '</span>' . $sscdn_separator . $product->get_stock_quantity() . esc_html__(' Items sold', 'sale-sync-countdown') . '</div>';
                                         }else{
@@ -767,8 +767,8 @@ class ClassProdSSCDN {
                                             echo '<div id="sscdn-progress-container">';
                                                 $progressValue = $product->get_stock_quantity();
                                                 $outOfValue = $progressValue+$product->get_total_sales();
-                                                $initialProgress = round(($progressValue / $outOfValue) * 100);
-                                                echo '<div id="sscdn-progress-bar" progress="' . $initialProgress . '" outof="' . $outOfValue . '" style="width: ' . $progressValue . '%;"></div>';
+                                                $initialProgress = round(($progressValue / $outOfValue) * 100); $progressSale_totaL = 100-$initialProgress;
+                                                echo '<div id="sscdn-progress-bar" progress="' . $product->get_total_sales() . '" outof="' . $outOfValue . '" style="width: ' . $progressSale_totaL . '%;"></div>';
                                             echo '</div>';
                                             echo '<div class="sscdn_sold_stock"><span class="sscdn-sold-item">' . $product->get_total_sales() . '</span>' . $sscdn_separator . $product->get_stock_quantity() . esc_html__(' Items sold', 'sale-sync-countdown') . '</div>';
                                         }else{
