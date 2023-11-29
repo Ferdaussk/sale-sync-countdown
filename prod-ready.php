@@ -222,15 +222,6 @@ class ClassProdSSCDN {
         return $links;
     }
 
-    public function sscdn_product_data_tabs($tabs){
-        $tabs['custom_tab'] = array(
-            'label'    => __('Product estimated date', 'sale-sync-countdown'),
-            'target'   => 'sscdn_product_estimated_date_tab',
-            'priority' => 100,
-        );
-        return $tabs;
-    }
-
     public function add_custom_field_to_general_tab(){
         global $woocommerce, $post;
     
@@ -799,7 +790,6 @@ class ClassProdSSCDN {
         add_action('woocommerce_shop_loop_item_title', [$this, 'sscdn_pro_shop_page']); // For shop page
         add_action('woocommerce_before_add_to_cart_button', [$this, 'sscdn_pro_single_page']); // For product single page
         // For product edit page
-        add_filter('woocommerce_product_data_tabs', [$this, 'sscdn_product_data_tabs']);
         add_action('woocommerce_product_options_general_product_data', [$this,'add_custom_field_to_general_tab']);
         add_action('woocommerce_process_product_meta', [$this,'sscdn_save_general_product_datas']);
         // It's for the admin all products page
