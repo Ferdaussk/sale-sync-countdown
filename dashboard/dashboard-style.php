@@ -1,7 +1,7 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) exit;
 // Taxos label check
-$sscdn_only_countdown_sss = get_option( 'sscdn-only-countdown-sss', 'number' );
+$sscdn_only_countdown_sss = get_option( 'sscdn-only-countdown-sss', 'progress' );
 $sscdn_only_countdown_show = get_option( 'sscdn-only-countdown-show', 'show' );
 $sscdn_checkout_page_check = get_option( 'sscdn-checkout-page-check', 'on' );
 $sscdn_thankyou_page_check = get_option( 'sscdn-thankyou-page-check', 'on' );
@@ -169,7 +169,7 @@ $ss_all_presets = [
           <label><?php echo esc_html__('Sold/Stock Style', 'sale-sync-countdown'); ?></label>
           <select name="sscdn-only-countdown-sss">
             <option value="number" <?php selected($sscdn_only_countdown_sss, 'number'); ?>><?php echo esc_html__('Number', 'sale-sync-countdown'); ?></option>
-            <option value="progress" <?php selected($sscdn_only_countdown_sss, 'progress'); ?>><?php echo esc_html__('Progress', 'sale-sync-countdown'); ?></option>
+            <option value="progress" <?php selected($sscdn_only_countdown_sss, 'progress'); ?>><?php echo esc_html__('Progress & Number', 'sale-sync-countdown'); ?></option>
           </select>
         </div>
         <div class="select-container emessage-container">
